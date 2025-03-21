@@ -43,8 +43,12 @@ export const Navbar = () => {
             <img 
               src="/lovable-uploads/524af9dc-88d8-4c60-a3a9-87137cc49c3f.png" 
               alt="Fingate Logo" 
-              className="h-10"
+              className="h-12" 
             />
+            <div className="hidden md:block">
+              <p className="font-medium text-foreground text-lg">Fingate</p>
+              <p className="text-xs text-foreground/70">Interim & Fractional CFO Services</p>
+            </div>
           </a>
 
           {/* Desktop Navigation */}
