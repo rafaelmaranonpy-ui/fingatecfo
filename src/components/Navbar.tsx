@@ -39,7 +39,7 @@ export const Navbar = () => {
             href="#home" 
             className="text-lg font-semibold text-foreground"
           >
-            Fingate
+            {/* Removed "Fingate" text as requested */}
           </a>
 
           {/* Desktop Navigation */}

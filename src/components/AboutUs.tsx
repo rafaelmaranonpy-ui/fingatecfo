@@ -2,6 +2,7 @@
 import React from 'react';
 import { Building, Briefcase, Users, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 export const AboutUs = () => {
   return (
@@ -87,10 +88,12 @@ export const AboutUs = () => {
               
               <div className="flex flex-col items-center md:items-start md:flex-row gap-6 mb-8">
                 <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/10">
-                  {/* Placeholder for founder photo */}
-                  <div className="w-full h-full bg-primary/20 flex items-center justify-center text-primary">
-                    RM
-                  </div>
+                  {/* Updated to use your uploaded photo */}
+                  <img 
+                    src="/lovable-uploads/88e3a3ee-fc2a-4c6e-be3e-3e11d63f288b.png" 
+                    alt="Rafael Marañón" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 
                 <div>
