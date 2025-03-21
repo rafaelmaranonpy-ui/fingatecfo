@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Linkedin, Twitter, Mail } from 'lucide-react';
+import { Linkedin, Mail } from 'lucide-react';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,27 +10,28 @@ export const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">YourName</h3>
+            <div className="flex items-center gap-2">
+              <img 
+                src="/lovable-uploads/524af9dc-88d8-4c60-a3a9-87137cc49c3f.png" 
+                alt="Fingate Logo" 
+                className="h-10" 
+              />
+            </div>
             <p className="text-muted-foreground">
               Strategic financial leadership for startups and scaling companies.
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.linkedin.com/company/fingatecfo" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
-                href="#" 
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a 
-                href="mailto:contact@example.com" 
+                href="mailto:contact@fingatecfo.com" 
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Email"
               >
@@ -66,26 +67,21 @@ export const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-base font-medium mb-4">Resources</h4>
+            <h4 className="text-base font-medium mb-4">Company</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Articles
+                <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+                  About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Case Studies
+                <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+                  Our Services
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Financial Templates
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  FAQ
+                <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                  Contact
                 </a>
               </li>
             </ul>
@@ -104,17 +100,12 @@ export const Footer = () => {
                   Terms of Service
                 </a>
               </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Cookie Policy
-                </a>
-              </li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-border/50 mt-12 pt-8 text-center text-muted-foreground text-sm">
-          <p>&copy; {currentYear} YourName. All rights reserved.</p>
+          <p>&copy; {currentYear} Fingate. All rights reserved.</p>
         </div>
       </div>
     </footer>

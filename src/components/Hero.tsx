@@ -20,8 +20,8 @@ export const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              Financial Leadership <br />
-              <span className="text-gradient">Without the Overhead</span>
+              <span className="text-gradient">Fingate</span> <br />
+              Unlock Financial Growth
             </h1>
             
             <p className="text-lg text-foreground/80 mb-8 max-w-lg">

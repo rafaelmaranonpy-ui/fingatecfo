@@ -21,7 +21,7 @@ export const Navbar = () => {
   const navItems = [
     { label: 'Home', href: '#home' },
     { label: 'Services', href: '#services' },
-    { label: 'Testimonials', href: '#testimonials' },
+    { label: 'About Us', href: '#about' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -38,9 +38,13 @@ export const Navbar = () => {
         <div className="flex items-center justify-between">
           <a 
             href="#home" 
-            className="text-xl font-semibold tracking-tight text-primary"
+            className="flex items-center gap-2"
           >
-            <span className="font-light">Your</span>Name
+            <img 
+              src="/lovable-uploads/524af9dc-88d8-4c60-a3a9-87137cc49c3f.png" 
+              alt="Fingate Logo" 
+              className="h-10"
+            />
           </a>
 
           {/* Desktop Navigation */}
