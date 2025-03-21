@@ -37,16 +37,9 @@ export const Navbar = () => {
         <div className="flex items-center justify-between">
           <a 
             href="#home" 
-            className="flex items-center gap-2"
+            className="text-lg font-semibold text-foreground"
           >
-            <img 
-              src="/lovable-uploads/524af9dc-88d8-4c60-a3a9-87137cc49c3f.png" 
-              alt="Fingate Logo" 
-              className="h-12"
-            />
-            <div className="hidden md:block">
-              <p className="text-xs text-foreground/70">Fractional & Interim CFO Services</p>
-            </div>
+            Fingate
           </a>
 
           {/* Desktop Navigation */}
