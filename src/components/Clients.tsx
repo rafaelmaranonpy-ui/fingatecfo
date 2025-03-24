@@ -25,7 +25,10 @@ export const Clients = () => {
     <section id="clients" className="py-16 md:py-24 bg-muted/30">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Clients</h2>
+          <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-4">
+            <span>Clients</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">We Can Support Your Growth</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             We provide tailored financial leadership to a diverse range of clients across different sectors and growth stages.
           </p>
