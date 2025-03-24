@@ -3,8 +3,8 @@ import React from 'react';
 import { Layout } from '@/components/Layout';
 import { Hero } from '@/components/Hero';
 import { Services } from '@/components/Services';
-import { AboutUs } from '@/components/AboutUs';
 import { Clients } from '@/components/Clients';
+import { AboutUs } from '@/components/AboutUs';
 import { Contact } from '@/components/Contact';
 
 const Index = () => {
@@ -12,8 +12,8 @@ const Index = () => {
     <Layout>
       <Hero />
       <Services />
-      <AboutUs />
       <Clients />
+      <AboutUs />
       <Contact />
     </Layout>
   );

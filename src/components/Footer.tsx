@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Linkedin, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -12,7 +11,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <p className="text-muted-foreground">
-              Strategic financial leadership for startups and scaling companies.
+              Unlock Financial Growth
             </p>
             <div className="flex space-x-4">
               <a 
