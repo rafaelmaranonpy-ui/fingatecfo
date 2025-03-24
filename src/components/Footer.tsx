@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Linkedin, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,13 +11,6 @@ export const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <img 
-                src="/lovable-uploads/524af9dc-88d8-4c60-a3a9-87137cc49c3f.png" 
-                alt="Fingate Logo" 
-                className="h-10" 
-              />
-            </div>
             <p className="text-muted-foreground">
               Strategic financial leadership for startups and scaling companies.
             </p>
@@ -91,14 +85,14 @@ export const Footer = () => {
             <h4 className="text-base font-medium mb-4">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/terms-of-service" className="text-muted-foreground hover:text-primary transition-colors">
                   Terms of Service
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
