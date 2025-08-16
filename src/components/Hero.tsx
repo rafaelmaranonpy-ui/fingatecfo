@@ -25,8 +25,8 @@ export const Hero = () => {
             </h1>
             
             <p className="text-lg text-foreground/80 mb-8 max-w-lg">
-              Strategic financial guidance for high-growth startups and scaling companies. 
-              Drive growth, optimize cash flow, and build investor-ready financials.
+              Strategic CFO services for PE and VC portfolio companies. 
+              Drive value creation, optimize financial performance, and accelerate growth initiatives.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
