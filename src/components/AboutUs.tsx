@@ -97,7 +97,7 @@ export const AboutUs = () => {
                 </div>
                 
                 <div>
-                  <h4 className="text-xl font-semibold">Rafael Marañón</h4>
+                  <h4 className="text-xl font-semibold">Rafael Marañón, CFA, CAIA</h4>
                   <p className="text-primary mb-4">Founder & Principal Consultant</p>
                   
                   <a 
