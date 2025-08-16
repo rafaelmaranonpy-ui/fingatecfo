@@ -68,17 +68,6 @@ export const AboutUs = () => {
                 </div>
               </div>
               
-              <div className="mt-10">
-                <a 
-                  href="https://www.linkedin.com/company/fingatecfo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-primary hover:underline"
-                >
-                  Visit us on LinkedIn
-                  <ExternalLink className="ml-2 h-4 w-4" />
-                </a>
-              </div>
             </div>
           </div>
           
