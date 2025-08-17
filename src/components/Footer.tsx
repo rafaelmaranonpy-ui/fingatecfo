@@ -38,19 +38,19 @@ export const Footer = () => {
             <h4 className="text-base font-medium mb-4">Clients</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#clients" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/#clients" className="text-muted-foreground hover:text-primary transition-colors">
                   Private Equity Funds
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#clients" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/#clients" className="text-muted-foreground hover:text-primary transition-colors">
                   Startups & Scaleups
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#clients" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/#clients" className="text-muted-foreground hover:text-primary transition-colors">
                   Family Offices
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -59,19 +59,19 @@ export const Footer = () => {
             <h4 className="text-base font-medium mb-4">Company</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/#about" className="text-muted-foreground hover:text-primary transition-colors">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/#services" className="text-muted-foreground hover:text-primary transition-colors">
                   Our Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/#contact" className="text-muted-foreground hover:text-primary transition-colors">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
