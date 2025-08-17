@@ -30,7 +30,7 @@ export const Contact = () => {
       setIsSubmitted(true);
       toast({
         title: "Message sent successfully",
-        description: "I'll get back to you as soon as possible.",
+        description: "We'll get back to you as soon as possible.",
       });
       
       // Reset form after a delay
