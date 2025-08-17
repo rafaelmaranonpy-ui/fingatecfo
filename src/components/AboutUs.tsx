@@ -103,14 +103,11 @@ export const AboutUs = () => {
               
               <div>
                 <p className="text-lg mb-4">
-                  Rafael brings extensive experience in financial leadership, having guided startups and scaling
-                  companies through critical growth phases. His expertise spans financial modeling, strategic planning,
-                  fundraising, and operational finance.
+                  Rafael brings extensive experience in financial leadership, guiding startups, scaleups, and portfolio companies backed by private equity and venture capital. His expertise spans the full investment lifecycle — from accelerating early-stage growth to driving operational value creation, leading buyouts and integrations, and preparing businesses for successful exits.
                 </p>
                 
                 <p className="text-lg">
-                  With a passion for helping businesses unlock their financial potential, Rafael founded Fingate
-                  to provide companies with the financial leadership they need without the overhead of a full-time CFO.
+                  He combines strong capabilities in financial modeling, strategic planning, fundraising, and operational finance with a hands-on approach to execution. A seasoned co-founder and charterholder of both the CFA and CAIA, Rafael bridges investor expectations with operational realities, aligning financial strategy to create long-term value across portfolio companies.
                 </p>
               </div>
             </div>
