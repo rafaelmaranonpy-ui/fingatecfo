@@ -1,10 +1,12 @@
 
 import React from 'react';
 import { Linkedin, Mail } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
   
   return (
     <footer className="bg-accent py-12 border-t border-border">
@@ -38,19 +40,37 @@ export const Footer = () => {
             <h4 className="text-base font-medium mb-4">Clients</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/#clients" className="text-muted-foreground hover:text-primary transition-colors">
-                  Private Equity Funds
-                </Link>
+                {isHomePage ? (
+                  <a href="#clients" className="text-muted-foreground hover:text-primary transition-colors">
+                    Private Equity Funds
+                  </a>
+                ) : (
+                  <Link to="/#clients" className="text-muted-foreground hover:text-primary transition-colors">
+                    Private Equity Funds
+                  </Link>
+                )}
               </li>
               <li>
-                <Link to="/#clients" className="text-muted-foreground hover:text-primary transition-colors">
-                  Startups & Scaleups
-                </Link>
+                {isHomePage ? (
+                  <a href="#clients" className="text-muted-foreground hover:text-primary transition-colors">
+                    Startups & Scaleups
+                  </a>
+                ) : (
+                  <Link to="/#clients" className="text-muted-foreground hover:text-primary transition-colors">
+                    Startups & Scaleups
+                  </Link>
+                )}
               </li>
               <li>
-                <Link to="/#clients" className="text-muted-foreground hover:text-primary transition-colors">
-                  Family Offices
-                </Link>
+                {isHomePage ? (
+                  <a href="#clients" className="text-muted-foreground hover:text-primary transition-colors">
+                    Family Offices
+                  </a>
+                ) : (
+                  <Link to="/#clients" className="text-muted-foreground hover:text-primary transition-colors">
+                    Family Offices
+                  </Link>
+                )}
               </li>
             </ul>
           </div>
@@ -59,19 +79,37 @@ export const Footer = () => {
             <h4 className="text-base font-medium mb-4">Company</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/#about" className="text-muted-foreground hover:text-primary transition-colors">
-                  About Us
-                </Link>
+                {isHomePage ? (
+                  <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+                    About Us
+                  </a>
+                ) : (
+                  <Link to="/#about" className="text-muted-foreground hover:text-primary transition-colors">
+                    About Us
+                  </Link>
+                )}
               </li>
               <li>
-                <Link to="/#services" className="text-muted-foreground hover:text-primary transition-colors">
-                  Our Services
-                </Link>
+                {isHomePage ? (
+                  <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+                    Our Services
+                  </a>
+                ) : (
+                  <Link to="/#services" className="text-muted-foreground hover:text-primary transition-colors">
+                    Our Services
+                  </Link>
+                )}
               </li>
               <li>
-                <Link to="/#contact" className="text-muted-foreground hover:text-primary transition-colors">
-                  Contact
-                </Link>
+                {isHomePage ? (
+                  <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                    Contact
+                  </a>
+                ) : (
+                  <Link to="/#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                    Contact
+                  </Link>
+                )}
               </li>
             </ul>
           </div>
