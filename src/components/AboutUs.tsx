@@ -37,7 +37,7 @@ export const AboutUs = () => {
                   <div>
                     <h4 className="font-semibold text-lg mb-1">Strategic Financial Leadership</h4>
                     <p className="text-foreground/70">
-                      We provide CFO-level expertise without the full-time cost, helping you make informed
+                      We provide CFO-level expertise with the flexibility you need, helping you make informed
                       financial decisions.
                     </p>
                   </div>
