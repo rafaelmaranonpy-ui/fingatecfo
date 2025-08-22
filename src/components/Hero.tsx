@@ -16,17 +16,17 @@ export const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in-up">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-6">
-              <span>Fractional & Interim CFO Services</span>
+              <span>Value Creation CFO for PE Portfolio Companies</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
               <span className="text-gradient">Fingate</span> <br />
-              Unlock Financial Growth
+              Accelerate Value Creation
             </h1>
             
             <p className="text-lg text-foreground/80 mb-8 max-w-lg">
-              Strategic CFO services for PE and VC portfolio companies. 
-              Drive value creation, optimize financial performance, and accelerate growth initiatives.
+              Strategic CFO services dedicated to PE portfolio companies. 
+              Drive operational excellence, maximize value creation, and accelerate profitable growth across your investment lifecycle.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">

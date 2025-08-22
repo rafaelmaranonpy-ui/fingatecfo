@@ -5,19 +5,19 @@ import { Building, TrendingUp, Home } from 'lucide-react';
 export const Clients = () => {
   const clientTypes = [
     {
-      title: 'Private Equity Funds',
+      title: 'PE Portfolio Companies',
       icon: <Building className="h-10 w-10 text-primary" />,
-      description: 'Financial diligence, portfolio company support, and value creation strategies for private equity firms.'
+      description: 'Dedicated value creation support for portfolio companies across all stages - from initial investment through exit optimization.'
     },
     {
-      title: 'Startups & Scaleups',
+      title: 'Private Equity Funds',
       icon: <TrendingUp className="h-10 w-10 text-primary" />,
-      description: 'Strategic financial guidance, fundraising support, and growth planning for early and growth-stage companies.'
+      description: 'Strategic financial leadership and operational excellence initiatives to maximize portfolio company performance and returns.'
     },
     {
-      title: 'Family Offices',
+      title: 'Growth-Stage Companies',
       icon: <Home className="h-10 w-10 text-primary" />,
-      description: 'Investment analysis, wealth preservation strategies, and financial oversight for family offices.'
+      description: 'Scale-ready financial infrastructure and growth acceleration strategies for companies preparing for PE partnership.'
     }
   ];
 
@@ -28,9 +28,9 @@ export const Clients = () => {
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-4">
             <span>Clients</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">We Can Support Your Growth</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Specialized in PE Portfolio Company Value Creation</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We provide tailored financial leadership to a diverse range of clients across different sectors and growth stages.
+            We focus on delivering measurable value creation outcomes for private equity portfolio companies and funds across all investment stages.
           </p>
         </div>
 

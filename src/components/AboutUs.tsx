@@ -14,8 +14,8 @@ export const AboutUs = () => {
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Who We Are</h2>
           <p className="text-foreground/70 text-lg">
-            Fingate provides strategic financial leadership to help startups and scaling companies
-            unlock their growth potential and navigate financial challenges.
+            Fingate specializes in value creation for private equity portfolio companies,
+            delivering strategic CFO services that maximize returns and accelerate growth across the investment lifecycle.
           </p>
         </div>
 
@@ -24,9 +24,9 @@ export const AboutUs = () => {
             <div className="glass-panel rounded-2xl p-8 md:p-12 relative z-10">
               <h3 className="text-2xl font-bold mb-6">Our Mission</h3>
               <p className="text-lg mb-8">
-                At Fingate, we're committed to providing strategic financial leadership that propels companies
-                forward. We bridge the gap between where you are and where you want to be, translating financial
-                complexity into clear, actionable strategies for growth.
+                At Fingate, we're dedicated to maximizing value creation for private equity portfolio companies.
+                We partner with PE funds to drive operational excellence, accelerate growth, and optimize financial 
+                performance across their portfolio, delivering measurable results that enhance investment returns.
               </p>
               
               <div className="space-y-6">
@@ -35,10 +35,10 @@ export const AboutUs = () => {
                     <Building className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-lg mb-1">Strategic Financial Leadership</h4>
+                    <h4 className="font-semibold text-lg mb-1">Value Creation Focus</h4>
                     <p className="text-foreground/70">
-                      We provide CFO-level expertise with the flexibility you need, helping you make informed
-                      financial decisions.
+                      Every strategy and initiative is designed to create measurable value and enhance portfolio company
+                      performance and investment returns.
                     </p>
                   </div>
                 </div>
@@ -48,9 +48,9 @@ export const AboutUs = () => {
                     <Briefcase className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-lg mb-1">Growth Focused</h4>
+                    <h4 className="font-semibold text-lg mb-1">PE-Focused Expertise</h4>
                     <p className="text-foreground/70">
-                      Our strategies are designed to unlock financial growth and help your business scale efficiently.
+                      Deep understanding of private equity dynamics, from initial investment through value creation initiatives to successful exits.
                     </p>
                   </div>
                 </div>
@@ -60,9 +60,9 @@ export const AboutUs = () => {
                     <Users className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-lg mb-1">Trusted Partners</h4>
+                    <h4 className="font-semibold text-lg mb-1">Results-Driven Partnership</h4>
                     <p className="text-foreground/70">
-                      We work as an extension of your team, aligning financial strategies with your business goals.
+                      We work as strategic partners to fund managers and portfolio companies, delivering tangible results that drive investment success.
                     </p>
                   </div>
                 </div>

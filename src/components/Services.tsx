@@ -7,33 +7,33 @@ export const Services = () => {
   const services = [
     {
       icon: <TrendingUp className="h-6 w-6" />,
-      title: "Strategic Financial Planning",
-      description: "Long-term financial strategies aligned with your business goals and growth trajectory.",
+      title: "Value Creation Strategy",
+      description: "Develop and execute comprehensive value creation plans to maximize portfolio company returns and accelerate growth.",
     },
     {
       icon: <BarChart className="h-6 w-6" />,
-      title: "Financial Modeling & Analysis",
-      description: "Robust financial models to forecast growth, manage cash flow, and inform strategic decisions.",
+      title: "Operational Finance Excellence",
+      description: "Optimize working capital, cash conversion cycles, and financial operations to enhance profitability and efficiency.",
     },
     {
       icon: <DollarSign className="h-6 w-6" />,
-      title: "Cash Flow Optimization",
-      description: "Strategies to maximize cash efficiency, manage burn rate, and extend runway.",
+      title: "Growth & Acquisition Support",
+      description: "Financial modeling and diligence for organic growth initiatives, acquisitions, and portfolio company expansion.",
     },
     {
       icon: <Landmark className="h-6 w-6" />,
-      title: "Fundraising Support",
-      description: "Preparation of investor-ready financials, pitch decks, and data rooms for funding rounds.",
+      title: "Exit Preparation & Optimization",
+      description: "Prepare portfolio companies for successful exits through financial optimization, reporting standardization, and value driver enhancement.",
     },
     {
       icon: <Briefcase className="h-6 w-6" />,
-      title: "Operational Finance",
-      description: "Day-to-day financial management including budgeting, reporting, and KPI tracking.",
+      title: "Performance Monitoring & KPIs",
+      description: "Implement robust financial controls, KPI dashboards, and performance tracking systems to drive accountability and results.",
     },
     {
       icon: <FileText className="h-6 w-6" />,
-      title: "Board & Investor Relations",
-      description: "Clear financial reporting and presentations for board meetings and investor updates.",
+      title: "Investor Relations & Reporting",
+      description: "Streamlined reporting to fund managers with clear value creation metrics, progress tracking, and strategic insights.",
     }
   ];
 
@@ -44,9 +44,9 @@ export const Services = () => {
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-4">
             <span>Services</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Financial Expertise When You Need It</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Value Creation Services for PE Portfolio Companies</h2>
           <p className="text-foreground/70 text-lg">
-            Flexible CFO services tailored to the unique needs of startups and scaling companies.
+            Specialized CFO services designed to maximize value creation and drive superior returns across your portfolio companies.
           </p>
         </div>
 
