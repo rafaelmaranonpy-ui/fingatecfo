@@ -2,11 +2,13 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +20,34 @@ export const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setIsMenuOpen(false);
+    
+    if (href === '/') {
+      navigate('/');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    const sectionId = href.replace('/#', '');
+    
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  };
 
   const navItems = [
     { label: 'Home', href: '/' },
@@ -47,20 +77,22 @@ export const Navbar = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-10">
             {navItems.map((item) => (
-              <Link
+              <a
                 key={item.label}
-                to={item.href}
-                className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
+                href={item.href}
+                onClick={(e) => handleNavClick(e, item.href)}
+                className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary cursor-pointer"
               >
                 {item.label}
-              </Link>
+              </a>
             ))}
-            <Link
-              to="/#contact"
-              className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+            <a
+              href="/#contact"
+              onClick={(e) => handleNavClick(e, '/#contact')}
+              className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring cursor-pointer"
             >
               Get in Touch
-            </Link>
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -82,22 +114,22 @@ export const Navbar = () => {
           <div className="md:hidden pt-4 pb-2 animate-fade-in">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
-                <Link
+                <a
                   key={item.label}
-                  to={item.href}
-                  className="text-sm font-medium py-2 text-foreground/80 hover:text-primary"
-                  onClick={() => setIsMenuOpen(false)}
+                  href={item.href}
+                  onClick={(e) => handleNavClick(e, item.href)}
+                  className="text-sm font-medium py-2 text-foreground/80 hover:text-primary cursor-pointer"
                 >
                   {item.label}
-                </Link>
+                </a>
               ))}
-              <Link
-                to="/#contact"
-                className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                onClick={() => setIsMenuOpen(false)}
+              <a
+                href="/#contact"
+                onClick={(e) => handleNavClick(e, '/#contact')}
+                className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring cursor-pointer"
               >
                 Get in Touch
-              </Link>
+              </a>
             </div>
           </div>
         )}
