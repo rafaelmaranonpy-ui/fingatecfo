@@ -52,8 +52,8 @@ export const Navbar = () => {
   const navItems = [
     { label: 'Home', href: '/' },
     { label: 'Services', href: '/#services' },
-    { label: 'Clients', href: '/#clients' },
-    { label: 'About Us', href: '/#about' },
+    { label: 'Clients', href: '/#who-i-work-with' },
+    { label: 'About', href: '/#about' },
   ];
 
   return (
@@ -91,7 +91,7 @@ export const Navbar = () => {
               onClick={(e) => handleNavClick(e, '/#contact')}
               className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring cursor-pointer"
             >
-              Get in Touch
+              Start a Conversation
             </a>
           </nav>
 
@@ -128,7 +128,7 @@ export const Navbar = () => {
                 onClick={(e) => handleNavClick(e, '/#contact')}
                 className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring cursor-pointer"
               >
-                Get in Touch
+                Start a Conversation
               </a>
             </div>
           </div>
