@@ -1,40 +1,51 @@
 
 import React from 'react';
-import { BarChart, Briefcase, TrendingUp, DollarSign, Landmark, FileText } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { RefreshCw, Landmark, Globe, Users } from 'lucide-react';
 
 export const Services = () => {
-  const services = [
+  const serviceBlocks = [
     {
-      icon: <TrendingUp className="h-6 w-6" />,
-      title: "Strategic Financial Planning",
-      description: "Long-term financial strategies aligned with your business goals and growth trajectory.",
-    },
-    {
-      icon: <BarChart className="h-6 w-6" />,
-      title: "Financial Modeling & Analysis",
-      description: "Robust financial models to forecast growth, manage cash flow, and inform strategic decisions.",
-    },
-    {
-      icon: <DollarSign className="h-6 w-6" />,
-      title: "Cash Flow Optimization",
-      description: "Strategies to maximize cash efficiency, manage burn rate, and extend runway.",
+      icon: <RefreshCw className="h-6 w-6" />,
+      title: 'Finance Transformation & Value Creation',
+      isPrimary: true,
+      items: [
+        'Finance diagnostics and transformation roadmaps',
+        'KPI frameworks and performance management',
+        'FP&A build-out and scenario modeling',
+        'Systems, processes, and team professionalization',
+      ],
     },
     {
       icon: <Landmark className="h-6 w-6" />,
-      title: "Fundraising Support",
-      description: "Preparation of investor-ready financials, pitch decks, and data rooms for funding rounds.",
+      title: 'Fundraising & Transaction Support',
+      isPrimary: false,
+      items: [
+        'Fundraising preparation and financial storytelling',
+        'Financial modeling and investor materials',
+        'Data room and due diligence support',
+        'Support for acquisitions, exits, or refinancing',
+      ],
     },
     {
-      icon: <Briefcase className="h-6 w-6" />,
-      title: "Operational Finance",
-      description: "Day-to-day financial management including budgeting, reporting, and KPI tracking.",
+      icon: <Globe className="h-6 w-6" />,
+      title: 'Growth & International Expansion',
+      isPrimary: false,
+      items: [
+        'Financial planning for multi-country expansion',
+        'Structuring finance operations across geographies',
+        'Cash, reporting, and governance for growth',
+      ],
     },
     {
-      icon: <FileText className="h-6 w-6" />,
-      title: "Board & Investor Relations",
-      description: "Clear financial reporting and presentations for board meetings and investor updates.",
-    }
+      icon: <Users className="h-6 w-6" />,
+      title: 'Interim CFO & Executive Finance Leadership',
+      isPrimary: false,
+      items: [
+        'Interim CFO support for PE portfolio companies and scaleups',
+        'Board-level reporting and investor communication',
+        'Hands-on leadership during growth or transition periods',
+      ],
+    },
   ];
 
   return (
@@ -44,27 +55,44 @@ export const Services = () => {
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-4">
             <span>Services</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Financial Expertise When You Need It</h2>
-          <p className="text-foreground/70 text-lg">
-            Flexible CFO services tailored to the unique needs of startups and scaling companies.
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">How I Can Help</h2>
+          <p className="text-muted-foreground text-lg">
+            Structured service offerings designed for PE-backed companies, startups, and scaleups at different stages of growth and transition.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {services.map((service, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {serviceBlocks.map((block, index) => (
             <div 
-              key={index} 
-              className={cn(
-                "bg-background rounded-xl p-6 border border-border/50 shadow-soft hover-lift animate-in-on-scroll",
-                "group transition-all duration-300"
-              )}
-              style={{ transitionDelay: `${index * 100}ms` }}
+              key={index}
+              className={`rounded-xl p-8 border animate-in-on-scroll ${
+                block.isPrimary 
+                  ? 'bg-primary/5 border-primary/20 md:col-span-2' 
+                  : 'bg-background border-border/50'
+              }`}
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-5 transition-all duration-300 group-hover:bg-primary group-hover:text-white">
-                {service.icon}
+              <div className="flex items-start gap-4 mb-6">
+                <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${
+                  block.isPrimary ? 'bg-primary text-primary-foreground' : 'bg-primary/10 text-primary'
+                }`}>
+                  {block.icon}
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold">{block.title}</h3>
+                  {block.isPrimary && (
+                    <span className="text-xs text-primary font-medium">Primary Focus</span>
+                  )}
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-muted-foreground">{service.description}</p>
+              <ul className={`space-y-3 ${block.isPrimary ? 'md:grid md:grid-cols-2 md:gap-x-8 md:space-y-0' : ''}`}>
+                {block.items.map((item, itemIndex) => (
+                  <li key={itemIndex} className="flex items-start gap-3 text-muted-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

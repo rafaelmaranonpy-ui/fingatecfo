@@ -24,16 +24,14 @@ export const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
       toast({
         title: "Message sent successfully",
-        description: "We'll get back to you as soon as possible.",
+        description: "I'll get back to you as soon as possible.",
       });
       
-      // Reset form after a delay
       setTimeout(() => {
         setFormState({
           name: '',
@@ -49,50 +47,51 @@ export const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-background to-accent/30">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           <div className="animate-in-on-scroll">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-4">
-              <span>Get In Touch</span>
+              <span>Contact</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Financial Strategy?</h2>
-            <p className="text-foreground/70 text-lg mb-8 max-w-lg">
-              Book a consultation to discuss how fractional CFO services can help your startup or scaleup reach its next milestone.
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Start a Conversation</h2>
+            <p className="text-muted-foreground text-lg mb-8">
+              Whether you're exploring options for a portfolio company, preparing for fundraising, 
+              or navigating a growth challenge — I'm happy to discuss.
             </p>
             
-            <div className="space-y-6 mb-8">
-              <div className="flex items-start">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 text-primary">
+            <div className="space-y-5">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
                   <ArrowRight className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Strategic Financial Planning</h3>
-                  <p className="text-muted-foreground">Align your finances with your business goals</p>
+                  <h3 className="font-medium">Portfolio Situations</h3>
+                  <p className="text-muted-foreground text-sm">Finance transformation and value creation support</p>
                 </div>
               </div>
               
-              <div className="flex items-start">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 text-primary">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
                   <ArrowRight className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Fundraising Preparation</h3>
-                  <p className="text-muted-foreground">Get your financials investor-ready</p>
+                  <h3 className="font-medium">Fundraising Plans</h3>
+                  <p className="text-muted-foreground text-sm">Preparation and execution support for transactions</p>
                 </div>
               </div>
               
-              <div className="flex items-start">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 text-primary">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
                   <ArrowRight className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Cash Flow Optimization</h3>
-                  <p className="text-muted-foreground">Extend your runway and improve efficiency</p>
+                  <h3 className="font-medium">Growth Challenges</h3>
+                  <p className="text-muted-foreground text-sm">Scaling finance for expansion and complexity</p>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="animate-in-on-scroll" style={{ transitionDelay: '200ms' }}>
+          <div className="animate-in-on-scroll" style={{ animationDelay: '150ms' }}>
             <div className="glass-panel rounded-xl shadow-medium p-8">
               <h3 className="text-xl font-semibold mb-6">Send a Message</h3>
               
@@ -131,7 +130,7 @@ export const Contact = () => {
                 
                 <div className="space-y-2">
                   <label htmlFor="company" className="text-sm font-medium">
-                    Company
+                    Company / Fund
                   </label>
                   <input
                     id="company"
@@ -140,7 +139,7 @@ export const Contact = () => {
                     value={formState.company}
                     onChange={handleChange}
                     className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                    placeholder="Your company"
+                    placeholder="Your organization"
                   />
                 </div>
                 
@@ -155,7 +154,7 @@ export const Contact = () => {
                     onChange={handleChange}
                     rows={4}
                     className="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                    placeholder="Tell me about your financial needs"
+                    placeholder="Briefly describe your situation"
                     required
                   />
                 </div>
@@ -179,7 +178,7 @@ export const Contact = () => {
                   ) : (
                     <>
                       <Send className="mr-2 h-4 w-4" />
-                      Send Message
+                      Start a Conversation
                     </>
                   )}
                 </button>
