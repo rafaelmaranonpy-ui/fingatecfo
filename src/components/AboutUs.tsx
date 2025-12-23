@@ -76,8 +76,7 @@ export const AboutUs = () => {
               <h3 className="text-2xl font-bold mb-6">Meet Our Founder</h3>
               
               <div className="flex flex-col items-center md:items-start md:flex-row gap-6 mb-8">
-                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/10">
-                  {/* Updated to use your uploaded photo */}
+                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/10 flex-shrink-0">
                   <img 
                     src="/lovable-uploads/88e3a3ee-fc2a-4c6e-be3e-3e11d63f288b.png" 
                     alt="Rafael Marañón" 
@@ -85,14 +84,14 @@ export const AboutUs = () => {
                   />
                 </div>
                 
-                <div>
-                  <h4 className="text-xl font-semibold mb-4">Rafael Marañón, CFA, CAIA</h4>
+                <div className="flex flex-col justify-center text-center md:text-left">
+                  <h4 className="text-xl font-semibold mb-2">Rafael Marañón, CFA, CAIA</h4>
                   
                   <a 
                     href="https://www.linkedin.com/in/rafaelmpdy/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-primary hover:underline"
+                    className="inline-flex items-center text-primary hover:underline justify-center md:justify-start"
                   >
                     Connect on LinkedIn
                     <ExternalLink className="ml-2 h-4 w-4" />
