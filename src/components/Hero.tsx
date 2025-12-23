@@ -64,8 +64,8 @@ export const Hero = () => {
                     <p className="font-medium">+23.5%</p>
                   </div>
                   <div className="bg-muted p-3 rounded-md">
-                    <p className="text-xs text-muted-foreground mb-1">Burn Rate</p>
-                    <p className="font-medium">-17.8%</p>
+                    <p className="text-xs text-muted-foreground mb-1">EBITDA Margin%</p>
+                    <p className="font-medium">+12%</p>
                   </div>
                 </div>
               </div>
