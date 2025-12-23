@@ -86,8 +86,7 @@ export const AboutUs = () => {
                 </div>
                 
                 <div>
-                  <h4 className="text-xl font-semibold">Rafael Marañón, CFA, CAIA</h4>
-                  <p className="text-primary mb-4">Founder & Principal Consultant</p>
+                  <h4 className="text-xl font-semibold mb-4">Rafael Marañón, CFA, CAIA</h4>
                   
                   <a 
                     href="https://www.linkedin.com/in/rafaelmpdy/"
