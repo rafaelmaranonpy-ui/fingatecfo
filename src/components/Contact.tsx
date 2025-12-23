@@ -155,7 +155,7 @@ export const Contact = () => {
                     onChange={handleChange}
                     rows={4}
                     className="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                    placeholder="Tell me about your financial needs"
+                    placeholder="How can we help you today?"
                     required
                   />
                 </div>

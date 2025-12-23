@@ -66,7 +66,7 @@ const TermsOfService = () => {
           <p>
             If you have any questions about these Terms of Service, please contact us at:
           </p>
-          <p>Email: contact@fingatecfo.com</p>
+          <p>Email: rafael.maranon@fingategrow.com</p>
         </div>
       </div>
     </Layout>
