@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Linkedin, Mail } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 export const Footer = () => {
@@ -25,13 +25,6 @@ export const Footer = () => {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a 
-                href="mailto:contact@fingatecfo.com" 
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Email"
-              >
-                <Mail className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -58,17 +51,6 @@ export const Footer = () => {
                 ) : (
                   <Link to="/#clients" className="text-muted-foreground hover:text-primary transition-colors">
                     Startups & Scaleups
-                  </Link>
-                )}
-              </li>
-              <li>
-                {isHomePage ? (
-                  <a href="#clients" className="text-muted-foreground hover:text-primary transition-colors">
-                    Family Offices
-                  </a>
-                ) : (
-                  <Link to="/#clients" className="text-muted-foreground hover:text-primary transition-colors">
-                    Family Offices
                   </Link>
                 )}
               </li>

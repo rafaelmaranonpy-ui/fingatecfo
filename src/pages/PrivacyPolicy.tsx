@@ -63,7 +63,7 @@ const PrivacyPolicy = () => {
           <p>
             If you have any questions about this Privacy Policy, please contact us at:
           </p>
-          <p>Email: contact@fingatecfo.com</p>
+          <p>Email: rafael.maranon@fingategrow.com</p>
         </div>
       </div>
     </Layout>

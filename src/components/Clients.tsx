@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Building, TrendingUp, Home } from 'lucide-react';
+import { Building, TrendingUp } from 'lucide-react';
 
 export const Clients = () => {
   const clientTypes = [
@@ -13,11 +13,6 @@ export const Clients = () => {
       title: 'Startups & Scaleups',
       icon: <TrendingUp className="h-10 w-10 text-primary" />,
       description: 'Strategic financial guidance, fundraising support, and growth planning for early and growth-stage companies.'
-    },
-    {
-      title: 'Family Offices',
-      icon: <Home className="h-10 w-10 text-primary" />,
-      description: 'Investment analysis, wealth preservation strategies, and financial oversight for family offices.'
     }
   ];
 
