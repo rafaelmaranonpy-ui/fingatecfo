@@ -84,7 +84,7 @@ export const AboutUs = () => {
                   />
                 </div>
                 
-                <div className="flex flex-col justify-center text-center md:text-left">
+                <div className="flex flex-col text-center md:text-left md:pt-1">
                   <h4 className="text-xl font-semibold mb-2">Rafael Marañón, CFA, CAIA</h4>
                   
                   <a 
