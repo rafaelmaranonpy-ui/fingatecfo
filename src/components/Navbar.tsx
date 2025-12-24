@@ -111,8 +111,8 @@ export const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden pt-4 pb-2 animate-fade-in">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg border-t border-border/20 animate-fade-in">
+            <div className="flex flex-col space-y-4 px-4 py-4">
               {navItems.map((item) => (
                 <a
                   key={item.label}
