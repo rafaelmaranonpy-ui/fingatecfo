@@ -75,7 +75,7 @@ export const AboutUs = () => {
             <div className="glass-panel rounded-2xl p-8 md:p-12 relative z-10">
               <h3 className="text-2xl font-bold mb-6">Meet Our Founder</h3>
               
-              <div className="flex flex-col items-center md:items-start md:flex-row gap-6 mb-8">
+              <div className="flex flex-col items-center md:flex-row md:items-start gap-6 mb-8">
                 <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/10 flex-shrink-0">
                   <img 
                     src="/lovable-uploads/88e3a3ee-fc2a-4c6e-be3e-3e11d63f288b.png" 
