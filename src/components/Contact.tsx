@@ -56,7 +56,7 @@ export const Contact = () => {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Financial Strategy?</h2>
             <p className="text-foreground/70 text-lg mb-8 max-w-lg">
-              Book a consultation to discuss how fractional CFO services can help your startup or scaleup reach its next milestone.
+              Book a conversation to explore tailored finance solutions that fuel growth and long-term value.
             </p>
             
             <div className="space-y-6 mb-8">
@@ -65,8 +65,8 @@ export const Contact = () => {
                   <ArrowRight className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Strategic Financial Planning</h3>
-                  <p className="text-muted-foreground">Align your finances with your business goals</p>
+                  <h3 className="font-medium">Value Creation & Strategic Planning</h3>
+                  <p className="text-muted-foreground">Align financial strategy with growth, performance, and value creation priorities.</p>
                 </div>
               </div>
               
@@ -75,8 +75,8 @@ export const Contact = () => {
                   <ArrowRight className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Fundraising Preparation</h3>
-                  <p className="text-muted-foreground">Get your financials investor-ready</p>
+                  <h3 className="font-medium">Interim CFO Support</h3>
+                  <p className="text-muted-foreground">Optimize liquidity, manage burn, and provide senior financial leadership to drive day-to-day performance.</p>
                 </div>
               </div>
               
@@ -85,8 +85,8 @@ export const Contact = () => {
                   <ArrowRight className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-medium">Cash Flow Optimization</h3>
-                  <p className="text-muted-foreground">Extend your runway and improve efficiency</p>
+                  <h3 className="font-medium">Finance Transformation & Scalability</h3>
+                  <p className="text-muted-foreground">Build scalable finance capabilities, processes, and systems to support growth and long-term value creation.</p>
                 </div>
               </div>
             </div>
