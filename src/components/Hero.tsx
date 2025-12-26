@@ -16,7 +16,7 @@ export const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in-up">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-6">
-              <span>Fractional & Interim CFO Services</span>
+              <span>Finance as a value creation engine</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
@@ -25,8 +25,7 @@ export const Hero = () => {
             </h1>
             
             <p className="text-lg text-foreground/80 mb-8 max-w-lg">
-              Strategic CFO services for PE and VC portfolio companies. 
-              Drive value creation, optimize financial performance, and accelerate growth initiatives.
+              Value creation, interim and fractional CFO support, and finance transformation for PE and VC backed companies, startups, and scaleups.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
