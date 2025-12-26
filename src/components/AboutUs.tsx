@@ -13,10 +13,6 @@ export const AboutUs = () => {
             <span>About Us</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Who We Are</h2>
-          <p className="text-foreground/70 text-lg">
-            Fingate provides strategic financial leadership to help startups and scaling companies
-            unlock their growth potential and navigate financial challenges.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
