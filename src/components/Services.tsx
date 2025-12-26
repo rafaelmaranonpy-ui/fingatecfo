@@ -79,7 +79,7 @@ export const Services = () => {
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Financial Expertise When You Need It</h2>
           <p className="text-foreground/70 text-lg">
-            Flexible CFO services tailored to the unique needs of startups and scaling companies.
+            Tailored finance solutions for scaling companies and PE portfolios
           </p>
         </div>
 
