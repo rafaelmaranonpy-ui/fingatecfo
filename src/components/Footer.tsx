@@ -35,11 +35,11 @@ export const Footer = () => {
               <li>
                 {isHomePage ? (
                   <a href="#clients" className="text-muted-foreground hover:text-primary transition-colors">
-                    Private Equity Funds
+                    Private Equity Backed Companies
                   </a>
                 ) : (
                   <Link to="/#clients" className="text-muted-foreground hover:text-primary transition-colors">
-                    Private Equity Funds
+                    Private Equity Backed Companies
                   </Link>
                 )}
               </li>
