@@ -44,7 +44,13 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 $to = 'rafael.maranon@fingategrow.com';
 $subject = 'New Contact Form Submission - FinGate Grow';
 
-// Build plain text email (more reliable for Hostinger)
+// IMPORTANT for deliverability:
+// - "From" should be an address on your own domain (SPF/DKIM alignment)
+// - put the visitor email in Reply-To (so you can reply directly)
+$fromEmail = 'no-reply@fingategrow.com';
+$fromName = 'FinGate Grow';
+
+// Build plain text email
 $emailBody = "New Contact Form Submission\n";
 $emailBody .= "===========================\n\n";
 $emailBody .= "Name: {$name}\n";
@@ -52,13 +58,15 @@ $emailBody .= "Email: {$email}\n";
 $emailBody .= "Company: {$company}\n";
 $emailBody .= "Message:\n{$message}\n";
 
-// Simple headers - Hostinger often requires From to match hosting domain
-$headers = "From: {$email}\r\n";
+// Headers
+$headers = "From: {$fromName} <{$fromEmail}>\r\n";
 $headers .= "Reply-To: {$email}\r\n";
-$headers .= "X-Mailer: PHP/" . phpversion();
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+$headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 
-// Try to send email
-$mailSent = @mail($to, $subject, $emailBody, $headers);
+// Use an envelope sender on your domain when possible (helps reduce spam)
+$mailSent = @mail($to, $subject, $emailBody, $headers, "-f {$fromEmail}");
 
 if ($mailSent) {
     echo json_encode(['success' => true, 'message' => 'Email sent successfully']);
