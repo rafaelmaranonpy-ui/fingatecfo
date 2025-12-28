@@ -20,30 +20,52 @@ export const Contact = () => {
     setFormState((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      toast({
-        title: "Message sent successfully",
-        description: "We'll get back to you as soon as possible.",
+    try {
+      // Send to PHP mail script - update this URL after deploying to Hostinger
+      const response = await fetch('/send-mail.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formState),
       });
-      
-      // Reset form after a delay
-      setTimeout(() => {
-        setFormState({
-          name: '',
-          email: '',
-          company: '',
-          message: '',
+
+      const result = await response.json();
+
+      if (result.success) {
+        setIsSubmitted(true);
+        toast({
+          title: "Message sent successfully",
+          description: "We'll get back to you as soon as possible.",
         });
-        setIsSubmitted(false);
-      }, 3000);
-    }, 1500);
+        
+        // Reset form after a delay
+        setTimeout(() => {
+          setFormState({
+            name: '',
+            email: '',
+            company: '',
+            message: '',
+          });
+          setIsSubmitted(false);
+        }, 3000);
+      } else {
+        throw new Error(result.message || 'Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      toast({
+        title: "Error sending message",
+        description: "Please try again or contact us directly via email.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
